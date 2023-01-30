@@ -1,0 +1,126 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(55, 62, 104, 1);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#wrapper{
+    min-width: 360px;;
+    max-width: 70vw;
+    margin: 2rem auto;
+}
+
+h1{
+    text-align: center;
+    color: aliceblue;
+}
+
+form{
+    display: flex;
+    margin: 1rem auto;
+}
+
+input{
+    font-size: 1.1rem;
+    width: 100%;
+    padding: .3rem;
+}
+
+input[type='submit']{
+    border: none;
+    color: aliceblue;
+    cursor: pointer;
+    background-color: rgb(39, 39, 39);
+}
+
+#total-salary, #total-employee{
+    padding: 0rem;
+}
+
+#total-salary::before{
+    content: 'total salary:';
+    text-transform: capitalize;
+}
+#total-employee::before{
+    content: 'total employee:';
+    text-transform: capitalize;
+}
+#total-div{
+    padding: .5rem 0 0 0;
+    font-size: 1.3rem;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sort-btn{
+    padding: .3rem;
+    cursor: pointer;
+    margin: .5rem 0 0 0;
+}
+
+#filter{
+    display: block;
+    width: 50%;
+    margin: .2rem 0;
+}
+
+table{
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 0;
+    border-collapse: collapse;
+}
+
+table{
+    width: 100%;
+} 
+
+th{
+    font-weight: bold;
+    padding: .2rem;
+    text-transform: uppercase;
+}
+
+td{
+    font-size: 2ch;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.edit-btn, .delete-btn{
+    cursor: pointer;
+    padding: .1rem;
+    margin: .1rem;
+    text-transform: uppercase;
+}
+
+
+.prompt-div{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2rem auto;
+    color: aliceblue;
+    width: 200px;
+}
+
+
+.yes-no-div{
+    margin: .5rem;
+    display: flex;
+    justify-content: center;
+}
+.yes-btn{
+    margin-right: .2rem;
+}
+.yes-btn, .no-btn{
+    font-weight: bold;
+    color: aliceblue;
+    text-shadow: 1px 2px 4px black;
+    background-color: rgb(35, 131, 64);
+    cursor: pointer;
+    font-size: 1rem;
+    padding: .3rem;
+}

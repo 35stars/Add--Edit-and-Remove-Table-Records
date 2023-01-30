@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script defer src="sort and filter table.js"></script>
+    <script defer src="add-table-row.js"></script>
+</head>
+<body>
+
+<section id="wrapper">
+    <h1>ADD, EDIT, REMOVE TABLE RECORDS</h1>
+    <p class="alert-msg"></p>
+    <form>
+        <input type="text" name="name" id="name" placeholder="name">
+        <input type="number" name="age" id="age" placeholder="age">
+        <input type="text" name="sex" id="sex" placeholder="sex">
+        <input type="number" name="salary" id="salary" placeholder="salary">
+
+        <input type="submit" name="submit" id="submit" value="submit">
+    </form>
+
+    
+    <div id="total-div"><span id="total-salary"></span> <span id="total-employee"></span></div>
+    
+    <button id="sort-btn" onclick="w3.sortHTML('.myTable', '.item', 'td:nth-child(1)')">SORT NAMES</button>
+    <input type="text" id="filter" oninput="w3.filterHTML('.id01', '.item', this.value)" placeholder="filter records">
+    <table border="1" class="w3-table-all myTable id01">
+        <thead>
+            <tr>
+                <th>name</th>
+                <TH>age</TH>
+                <th>sex</th>
+                <th>salary</th>
+                <th>remove?</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            
+        </tbody>
+    </table>
+</section>
+</body>
+</html>
